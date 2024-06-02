@@ -35,25 +35,31 @@ section {
     margin: 2em 0;
 }
 
+#home {
+    text-align: center;
+    background-color: #eef;
+    padding: 2em;
+}
+
 #featured {
     background-color: #f9f9f9;
     padding: 2em;
 }
 
-#featured h2, #recent-posts h2, #about h2 {
+#featured h2, #recent-posts h2, #wealth-articles h2, #services h2, #about h2, #contact h2 {
     border-bottom: 2px solid #333;
     padding-bottom: 0.5em;
 }
 
-#featured article {
+#featured article, #wealth-articles article {
     padding: 1em 0;
 }
 
-#featured article h3 {
+#featured article h3, #wealth-articles article h3 {
     margin-top: 0;
 }
 
-#featured article a {
+#featured article a, #wealth-articles article a {
     color: #333;
     text-decoration: none;
     font-weight: bold;
@@ -73,9 +79,47 @@ section {
     text-decoration: none;
 }
 
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services ul li {
+    padding: 0.5em 0;
+}
+
 #about {
     background-color: #f0f0f0;
     padding: 2em;
+}
+
+#contact {
+    background-color: #eef;
+    padding: 2em;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form label {
+    margin: 0.5em 0 0.2em;
+}
+
+#contact form input, #contact form textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
 }
 
 footer {
